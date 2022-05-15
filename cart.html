@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Gelato</title>
+	<meta name="description" content="Simple Starter Description">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<link rel="icon" href="images/favicon.png">
+	<meta property="og:image" content="images/preview.jpg">
+
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-reboot.min.css">
+	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
+
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/media.css">
+
+	<script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
+
+	<script src="js/totalPriceCalc.js" defer></script>
+	<script src="js/popup.js" defer></script>
+	<script src="js/toggleCartEmpty.js" defer></script>
+	<script src="js/common.js" defer></script>
+	<script src="js/addToCart.js" defer></script>
+	<script src="js/toggleMenuBurger.js" defer></script>
+</head>
+
+<body>
+
+	
+	<header class="header">
+		<div class="header-info">Here You Can Take Best Handmade <span class="pink">Icecream</span></div>
+		<div class="burger__menu hidden">
+
+			<ul class="burger__list">
+				<li class="burger-item">
+					<a href="/" class="burger-link">HOME</a>
+				</li>
+				<li class="burger-item">
+					<a href="#!" class="burger-link">FLAVORS</a>
+				</li>
+				<li class="burger-item">
+					<a href="#!" class="burger-link">EVENTS</a>
+				</li>
+				<li class="burger-item">
+					<a href="#!" class="burger-link last">ABOUT</a>
+				</li>
+			</ul>
+
+		</div>
+
+		<div class="container-full">
+
+			<div class="header-wrapper">
+
+				<div class="header__nav">
+					<div class="header__burger burger">
+						<img class="menu-icon" src="./images/svg/burger-menu.svg" alt="menu">
+					</div>
+					<ul class="header__list">
+						<li class="header-item">
+							<a href="./index.html" class="header-link">HOME</a>
+						</li>
+						<li class="header-item">
+							<a href="#!" class="header-link">FLAVORS</a>
+						</li>
+						<li class="header-item">
+							<a href="#!" class="header-link">EVENTS</a>
+						</li>
+						<li class="header-item">
+							<a href="#!" class="header-link last">ABOUT</a>
+						</li>
+					</ul>
+				</div>
+	
+				<div class="header__logo">
+					<a href="./index.html" class="header__logo-link">
+						<img src="./images/svg/logo.svg" alt="Gelato" class="header__logo-pic">
+					</a>
+				</div>
+	
+				<div class="header__social">
+					<a href="https://www.instagram.com/" target="_blank" class="header__social-link">
+						<img src="./images/svg/inst-ico.svg" alt="instagram" class="header__social-pic">
+					</a>
+					<a href="https://twitter.com/" target="_blank" class="header__social-link">
+						<img src="./images/svg/twitter-ico.svg" alt="twitter" class="header__social-pic">
+					</a>
+					<a href="https://www.snapchat.com/" target="_blank" class="header__social-link last">
+						<img src="./images/svg/snap-ico.svg" alt="snapchat" class="header__social-pic">
+					</a>
+				</div>
+
+			</div>
+
+		</div>
+
+	</header>
+
+	<section class="menu cart">
+
+		<div class="container-full">
+			<div class="item__cards">
+
+					<div data-id="01" class="item__card">
+						<img src="./images/icecream-1.png" alt="cake" class="icecream-pic">
+						<h3 class="icecream-title">Cream Milk</h3>
+						<h5 class="icecream-info">170g / 400kal</h5>
+						<h5 class="icecream-info price"><span class="price">15</span>.00 $</h5>
+						<div class="icecream-action">
+							<div class="icecream__counter-wrapper">
+								<div class="counter-control" ><img data-action="minus" src="./images/svg/ico-minus.svg" alt="minus" class="couter-control__minus"></div>
+								<div class="icecream__control number" data-counter>1</div>
+								<div class="counter-control"><img data-action="plus" src="./images/svg/ico-plus.svg" alt="plus" class="couter-control__plus"></div>
+							</div>
+							<button data-cart type="button" class="add__button">ADD</button>
+						</div>
+					</div>
+					<div data-id="02" class="item__card">
+						<img src="./images/icecream-2.png" alt="cake" class="icecream-pic">
+						<h3 class="icecream-title">Strawberry Milk</h3>
+						<h5 class="icecream-info">240g / 440kal</h5>
+						<h5 class="icecream-info price"><span class="price">11</span>.00 $</h5>
+						<div class="icecream-action">
+							<div class="icecream__counter-wrapper">
+								<div class="counter-control" ><img data-action="minus" src="./images/svg/ico-minus.svg" alt="minus" class="couter-control__minus"></div>
+								<div class="icecream__control number" data-counter>1</div>
+								<div class="counter-control" ><img data-action="plus" src="./images/svg/ico-plus.svg" alt="plus" class="couter-control__plus"></div>
+							</div>
+							<button data-cart type="button" class="add__button">ADD</button>
+						</div>
+					</div>
+					<div data-id="03" class="item__card">
+						<img src="./images/icecream-3.png" alt="cake" class="icecream-pic">
+						<h3 class="icecream-title">Caramel Milk</h3>
+						<h5 class="icecream-info">270g / 500kal</h5>
+						<h5 class="icecream-info price"><span class="price">17</span>.00 $</h5>
+						<div class="icecream-action">
+							<div class="icecream__counter-wrapper">
+								<div class="counter-control"><img data-action="minus" src="./images/svg/ico-minus.svg" alt="minus" class="couter-control__minus"></div>
+								<div class="icecream__control number" data-counter>1</div>
+								<div class="counter-control"><img data-action="plus" src="./images/svg/ico-plus.svg" alt="plus" class="couter-control__plus"></div>
+							</div>
+							<button data-cart type="button" class="add__button">ADD</button>
+						</div>
+					</div>
+
+			</div>
+		</div>
+
+	</section>
+
+	<section class="cart">
+
+		<div class="container-cart">
+
+			<h2 class="cart__title">SHOPPING CART</h2>
+			<div class="cart__card">
+				<div data-cart-empty class="empty">Your Cart Is Empty...</div>
+
+				<div class="cart__card-total">
+					<p class="total-price">Total Price : <span class="total-number">0</span><span class="dollor">.00 $</span></p>
+					<button class="order__button">CHECKOUT</button>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+
+	<div id="checkout" class="popup hidden">
+
+		<div class="popup__body">
+			<div class="popup__content">
+				<a href="#!" class="popup__close"><img class="close" src="./images/svg/cross.svg" alt=""></a>
+				<div class="popup__title">Checkout Box</div>
+				<input placeholder="Name" type="text" class="name">
+				<input placeholder="Phone number" type="tel" class="phone">
+				<button class="order__button checkout">CHECKOUT</button>
+			</div>
+		</div>
+
+	</div>
+
+
+</body>
+</html>
